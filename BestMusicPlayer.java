@@ -19,6 +19,12 @@ import javafx.stage.*;
  */
 public class BestMusicPlayer extends Application {
 public static Label songtitle = new Label("No song currently playing.");
+public static String songname = "Pride of the Wolverines";
+public static String getSongName() {
+    return songname;
+}
+public static String MONKEY_TITLE = "The Best Music Player Ever!";
+public static Button getButton() { return new Button();}
 
 /**
  * Main method to launch the program.
@@ -34,8 +40,8 @@ public static void main(String[] args) {launch(args);}
         final JFXPanel bananarama = new JFXPanel();
         
         
-        primaryStage.setTitle("The Best Music Player Ever!");
-        Button button = new Button();
+        primaryStage.setTitle(this.MONKEY_TITLE);
+        Button button = getButton();
         button.setText("Play Wolverines Pride (3:42)");
         button.setOnAction(new EventHandler<ActionEvent>() {
             @Override
@@ -45,7 +51,7 @@ public static void main(String[] args) {launch(args);}
                 Media media = new Media(new File(song).toURI().toString());
                 MediaPlayer mediaPlayer = new MediaPlayer(media);
                 mediaPlayer.play();
-                songtitle.setText("Pride of the Wolverines");}});
+                songtitle.setText(BestMusicPlayer.getSongName());}});
         
         GridPane paneofgridmonkeys = new GridPane();
         paneofgridmonkeys.setAlignment(Pos.CENTER);
