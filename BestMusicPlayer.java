@@ -37,7 +37,7 @@ public static void main(String[] args) {launch(args);}
     public void start(Stage primaryStage) 
     {
         //solution from stackoverflow user Sagar Damani at: https://stackoverflow.com/questions/14025718/javafx-toolkit-not-initialized-when-trying-to-play-an-mp3-file-through-mediap
-        final JFXPanel bananarama = new JFXPanel();
+                final JFXPanel bananarama = new JFXPanel();
         
         
         primaryStage.setTitle(this.MONKEY_TITLE);
