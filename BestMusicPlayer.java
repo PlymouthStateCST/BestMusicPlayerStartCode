@@ -47,7 +47,7 @@ public static void main(String[] args) {launch(args);}
             @Override
             public void handle(ActionEvent event) {
                 //code to play a song modified from stackoverflow user jasonwaste's answer on https://stackoverflow.com/questions/6045384/playing-mp3-and-wav-in-java
-                String song = "./songs/PrideOfTheWolverines.mp3";
+                String song = "songs/PrideOfTheWolverines.mp3";
                 Media media = new Media(new File(song).toURI().toString());
                 MediaPlayer mediaPlayer = new MediaPlayer(media);
                 mediaPlayer.play();
